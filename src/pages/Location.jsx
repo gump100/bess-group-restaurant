@@ -39,13 +39,16 @@ function Location() {
         </div>
 
         <div className="map-container">
-          <div className="map-placeholder">
-            <p>
-              📍 Google Maps embed goes here
-              <br />
-              <small>(Coming in Week 4)</small>
-            </p>
-          </div>
+          <iframe
+            title="Restaurant Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.389579181838!2d-81.53005092440442!3d35.27143905237663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8857201d27cd8d81%3A0xefa4e4023fcc5e43!2s722%20Earl%20Rd%2C%20Shelby%2C%20NC%2028152!5e0!3m2!1sen!2sus!4v1777753741663!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
