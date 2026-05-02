@@ -1,23 +1,12 @@
 /* ============================================
    APP STYLES — App.css
    
-   YOUR COLOR PALETTE (from your planning doc):
-   
-   Primary:    #______  (headers, buttons, accents)
-   Secondary:  #______  (hover states, highlights)
-   Dark:       #______  (navbar, footer backgrounds)
-   Background: #______  (page backgrounds)
-   Text:       #______  (body text)
-   
-   Find and replace the placeholder colors below
-   with YOUR colors. Use Ctrl+Shift+H in VS Code
-   to replace across the whole file.
-   
-   Current placeholder colors to replace:
-   #2C1810  →  YOUR dark color
-   #B7410E  →  YOUR primary color
-   #D4A24E  →  YOUR secondary/accent color
-   #F9F5F0  →  YOUR background color
+   YOUR COLOR PALETTE:
+   Primary:    #7A1F2B  (headers, buttons, accents)
+   Secondary:  #D4A13A  (hover states, highlights)
+   Dark:       #2B1B17  (navbar, footer backgrounds)
+   Background: #F5EFE6  (page backgrounds)
+   Text:       #1F1F1F  (body text)
    ============================================ */
 
 /* -------------------------
@@ -28,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #2C1810; /* TODO: YOUR dark color */
+  background-color: #2B1B17;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -36,7 +25,7 @@
 }
 
 .nav-brand a {
-  color: #D4A24E; /* TODO: YOUR secondary/accent color */
+  color: #D4A13A;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -50,7 +39,7 @@
 }
 
 .nav-links a {
-  color: #F9F5F0; /* TODO: YOUR light/background color */
+  color: #F5EFE6;
   font-size: 0.95rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -61,8 +50,8 @@
 }
 
 .nav-links a:hover {
-  color: #D4A24E; /* TODO: YOUR secondary/accent color */
-  border-bottom-color: #D4A24E; /* TODO: same accent color */
+  color: #D4A13A;
+  border-bottom-color: #D4A13A;
 }
 
 /* -------------------------
@@ -82,8 +71,8 @@
    FOOTER
    ------------------------- */
 .footer {
-  background-color: #2C1810; /* TODO: YOUR dark color */
-  color: #F9F5F0;
+  background-color: #2B1B17;
+  color: #F5EFE6;
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -99,20 +88,20 @@
 .hero {
   background: linear-gradient(
       135deg,
-      rgba(44, 24, 16, 0.88),  /* TODO: YOUR dark color with opacity */
-      rgba(183, 65, 14, 0.7)   /* TODO: YOUR primary color with opacity */
+      rgba(43, 27, 23, 0.88),
+      rgba(122, 31, 43, 0.7)
     );
-  color: #F9F5F0;
+  color: #F5EFE6;
   text-align: center;
   padding: 6rem 2rem;
   margin: -3rem -2rem 3rem -2rem;
-  border-bottom: 4px solid #D4A24E; /* TODO: YOUR accent color */
+  border-bottom: 4px solid #D4A13A;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
-  color: #F9F5F0;
+  color: #F5EFE6;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -120,26 +109,26 @@
   font-size: 1.3rem;
   font-style: italic;
   margin-bottom: 2rem;
-  color: #D4A24E; /* TODO: YOUR accent color */
+  color: #D4A13A;
 }
 
 .cta-button {
   display: inline-block;
   padding: 0.9rem 2.5rem;
-  background-color: #B7410E; /* TODO: YOUR primary color */
-  color: #F9F5F0;
+  background-color: #7A1F2B;
+  color: #F5EFE6;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 4px;
-  border: 2px solid #D4A24E; /* TODO: YOUR accent color */
+  border: 2px solid #D4A13A;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-  background-color: #D4A24E; /* TODO: YOUR accent color */
-  color: #2C1810; /* TODO: YOUR dark color */
+  background-color: #D4A13A;
+  color: #2B1B17;
   transform: translateY(-2px);
 }
 
@@ -153,24 +142,24 @@
 
 .welcome-text h2 {
   font-size: 2rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
   margin-bottom: 1rem;
 }
 
 .welcome-text p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #444;
+  color: #1F1F1F;
 }
 
 .welcome-image {
-  background: linear-gradient(135deg, #B7410E, #D4A24E); /* TODO: YOUR colors */
+  background: linear-gradient(135deg, #7A1F2B, #D4A13A);
   border-radius: 8px;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #F9F5F0;
+  color: #F5EFE6;
   font-size: 1.2rem;
   font-style: italic;
 }
@@ -188,7 +177,7 @@
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-top: 3px solid #B7410E; /* TODO: YOUR primary color */
+  border-top: 3px solid #7A1F2B;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -204,7 +193,7 @@
 
 .feature-card h3 {
   font-size: 1.2rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
   margin-bottom: 0.5rem;
 }
 
@@ -223,7 +212,7 @@
 
 .about-header h1 {
   font-size: 2.5rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
   margin-bottom: 0.5rem;
 }
 
@@ -241,21 +230,21 @@
 .about-story p {
   font-size: 1.05rem;
   line-height: 1.9;
-  color: #444;
+  color: #1F1F1F;
   margin-bottom: 1.2rem;
 }
 
 .about-divider {
   width: 60px;
   height: 3px;
-  background: #D4A24E; /* TODO: YOUR accent color */
+  background: #D4A13A;
   margin: 2rem auto;
 }
 
 .team-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
   margin-bottom: 2rem;
 }
 
@@ -277,7 +266,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #B7410E, #D4A24E); /* TODO: YOUR colors */
+  background: linear-gradient(135deg, #7A1F2B, #D4A13A);
   margin: 0 auto 1rem;
   display: flex;
   align-items: center;
@@ -288,12 +277,12 @@
 
 .team-card h3 {
   font-size: 1.1rem;
-  color: #2C1810;
+  color: #2B1B17;
   margin-bottom: 0.3rem;
 }
 
 .team-card .role {
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
@@ -314,7 +303,7 @@
 
 .menu-header h1 {
   font-size: 2.5rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
 }
 
 .menu-header p {
@@ -328,9 +317,9 @@
 
 .menu-category h2 {
   font-size: 1.6rem;
-  color: #2C1810;
+  color: #2B1B17;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #D4A24E; /* TODO: YOUR accent color */
+  border-bottom: 2px solid #D4A13A;
   margin-bottom: 1.5rem;
 }
 
@@ -345,7 +334,7 @@
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #B7410E; /* TODO: YOUR primary color */
+  border-left: 4px solid #7A1F2B;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -356,7 +345,7 @@
 
 .menu-item h3 {
   font-size: 1.15rem;
-  color: #2C1810;
+  color: #2B1B17;
   margin-bottom: 0.4rem;
 }
 
@@ -370,7 +359,7 @@
 .menu-item .price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
 }
 
 .loading-message {
@@ -383,7 +372,7 @@
 .error-message {
   text-align: center;
   padding: 2rem;
-  color: #B7410E;
+  color: #7A1F2B;
   background: #fde8e0;
   border-radius: 8px;
 }
@@ -398,7 +387,7 @@
 
 .location-header h1 {
   font-size: 2.5rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
 }
 
 .location-content {
@@ -410,7 +399,7 @@
 
 .location-info h2 {
   font-size: 1.4rem;
-  color: #2C1810;
+  color: #2B1B17;
   margin-bottom: 0.8rem;
   margin-top: 1.5rem;
 }
@@ -421,12 +410,12 @@
 
 .location-info p {
   font-size: 1rem;
-  color: #444;
+  color: #1F1F1F;
   margin-bottom: 0.3rem;
 }
 
 .location-info .phone {
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
   font-weight: 600;
 }
 
@@ -439,7 +428,7 @@
 
 .hours-row .day {
   font-weight: 600;
-  color: #2C1810;
+  color: #2B1B17;
 }
 
 .hours-row .time {
@@ -455,7 +444,7 @@
 .map-placeholder {
   width: 100%;
   height: 400px;
-  background: linear-gradient(135deg, #e8ddd3, rgba(212, 162, 78, 0.2));
+  background: linear-gradient(135deg, #e8ddd3, rgba(212, 161, 58, 0.2));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -473,7 +462,7 @@
 
 .contact-header h1 {
   font-size: 2.5rem;
-  color: #B7410E; /* TODO: YOUR primary color */
+  color: #7A1F2B;
 }
 
 .contact-header p {
@@ -498,7 +487,7 @@
   display: block;
   margin-bottom: 0.4rem;
   font-weight: 600;
-  color: #2C1810;
+  color: #2B1B17;
   font-size: 0.95rem;
 }
 
@@ -517,7 +506,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #B7410E; /* TODO: YOUR primary color */
+  border-color: #7A1F2B;
 }
 
 .form-group textarea {
@@ -545,8 +534,8 @@
 .submit-btn {
   width: 100%;
   padding: 0.9rem;
-  background-color: #B7410E; /* TODO: YOUR primary color */
-  color: #F9F5F0;
+  background-color: #7A1F2B;
+  color: #F5EFE6;
   border: none;
   border-radius: 6px;
   font-size: 1.05rem;
@@ -558,14 +547,13 @@
 }
 
 .submit-btn:hover {
-  background-color: #D4A24E; /* TODO: YOUR accent color */
-  color: #2C1810; /* TODO: YOUR dark color */
+  background-color: #D4A13A;
+  color: #2B1B17;
   transform: translateY(-1px);
 }
 
 /* -------------------------
    RESPONSIVE DESIGN
-   (screens 768px and below)
    ------------------------- */
 @media (max-width: 768px) {
   .navbar {
