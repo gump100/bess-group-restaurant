@@ -21,9 +21,9 @@ function Home() {
             Whether you're joining us for a homestyle meal or booking our catering services for your next event, we are committed to delivering warmth, flavor, and hospitality to every table. The Bess Group LLC is more than a restaurant — it's a gathering place for the community.
           </p>
         </div>
-        <div className="welcome-image">
-          📸 Add your restaurant photo here
-        </div>
+       <div className="welcome-image">
+  <img src="/images/restaurant.jpg" alt="The Bess Group LLC" style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "8px" }} />
+</div>
       </section>
 
       <section>
